@@ -11,9 +11,9 @@ class Pilha:
         return False
 
     def push(self, valor):
-       no = No()
-       self.topo = no
-       no = self.topo.__proximo
+       no = No(valor) #5 #6 #7
+       no.__proximo = self.topo #no #5 #6
+       self.topo = no #5 #6
     
     def pop(self):
      pass
