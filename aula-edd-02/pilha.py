@@ -27,9 +27,10 @@ class Pilha:
             raise Exception("Sorry, pilha vazia!!!")
         else:
             print("Relação de itens na Pilha: \n")
-            pilha_invertida =  self.__pilha.reverse()
-            for item in self.__pilha:   
-                print(item)
+            inverte = (self.__pilha[::-1])
+            for i in inverte:
+                print(i)
+           
 
         
     def get_size(self):
