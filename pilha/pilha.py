@@ -1,10 +1,19 @@
 from no import No
 
 class Pilha:    
+    def __init__(self) -> None:
+       self.topo = None
+       self.tamanho = 0
+
     def is_empty(self):
-        pass
+        if self.tamanho == 0:
+            return True
+        return False
+
     def push(self, valor):
-       pass
+       no = No()
+       self.topo = no
+       no = self.topo.__proximo
     
     def pop(self):
      pass
